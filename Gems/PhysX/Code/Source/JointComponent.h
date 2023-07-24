@@ -67,6 +67,8 @@ namespace PhysX
             const JointLimitProperties& limitProperties,
             const JointMotorProperties& motorProperties);
 
+        AzPhysics::JointHandle GetJointHandle();
+
     protected:
         /// Struct to provide subclasses with native pointers during joint initialization.
         /// See use of GetLeadFollowerInfo().

@@ -89,6 +89,11 @@ namespace PhysX
     {
     }
 
+    AzPhysics::JointHandle JointComponent::GetJointHandle()
+    {
+        return m_jointHandle;
+    }
+
     void JointComponent::Activate()
     {
         if (!m_configuration.m_followerEntity.IsValid())
